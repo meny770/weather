@@ -1,0 +1,1184 @@
+{
+   "Headline": {
+     "EffectiveDate": "2020-05-21T20:00:00+03:00",
+     "EffectiveEpochDate": 1590080400,
+     "Severity": 4,
+     "Text": "Air quality will be unhealthy for sensitive groups Thursday evening through Friday afternoon",
+     "Category": "air quality",
+     "EndDate": "2020-05-22T20:00:00+03:00",
+     "EndEpochDate": 1590166800,
+     "MobileLink": "http://m.accuweather.com/en/il/tel-aviv/215854/extended-weather-forecast/215854?unit=c&lang=en-us",
+     "Link": "http://www.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?unit=c&lang=en-us"
+   },
+   "DailyForecasts": [
+     {
+       "Date": "2020-05-21T07:00:00+03:00",
+       "EpochDate": 1590033600,
+       "Sun": {
+         "Rise": "2020-05-21T05:40:00+03:00",
+         "EpochRise": 1590028800,
+         "Set": "2020-05-21T19:36:00+03:00",
+         "EpochSet": 1590078960
+       },
+       "Moon": {
+         "Rise": "2020-05-21T04:58:00+03:00",
+         "EpochRise": 1590026280,
+         "Set": "2020-05-21T18:26:00+03:00",
+         "EpochSet": 1590074760,
+         "Phase": "WaningCrescent",
+         "Age": 29
+       },
+       "Temperature": {
+         "Minimum": {
+           "Value": 21.9,
+           "Unit": "C",
+           "UnitType": 17
+         },
+         "Maximum": {
+           "Value": 34.7,
+           "Unit": "C",
+           "UnitType": 17
+         }
+       },
+       "RealFeelTemperature": {
+         "Minimum": {
+           "Value": 20.7,
+           "Unit": "C",
+           "UnitType": 17
+         },
+         "Maximum": {
+           "Value": 38.1,
+           "Unit": "C",
+           "UnitType": 17
+         }
+       },
+       "RealFeelTemperatureShade": {
+         "Minimum": {
+           "Value": 20.7,
+           "Unit": "C",
+           "UnitType": 17
+         },
+         "Maximum": {
+           "Value": 33.2,
+           "Unit": "C",
+           "UnitType": 17
+         }
+       },
+       "HoursOfSun": 12.9,
+       "DegreeDaySummary": {
+         "Heating": {
+           "Value": 0,
+           "Unit": "C",
+           "UnitType": 17
+         },
+         "Cooling": {
+           "Value": 10,
+           "Unit": "C",
+           "UnitType": 17
+         }
+       },
+       "AirAndPollen": [
+         {
+           "Name": "AirQuality",
+           "Value": 105,
+           "Category": "Unhealthy (Sensitive)",
+           "CategoryValue": 3,
+           "Type": "Particle Pollution"
+         },
+         {
+           "Name": "Grass",
+           "Value": 0,
+           "Category": "Low",
+           "CategoryValue": 1
+         },
+         {
+           "Name": "Mold",
+           "Value": 0,
+           "Category": "Low",
+           "CategoryValue": 1
+         },
+         {
+           "Name": "Ragweed",
+           "Value": 0,
+           "Category": "Low",
+           "CategoryValue": 1
+         },
+         {
+           "Name": "Tree",
+           "Value": 0,
+           "Category": "Low",
+           "CategoryValue": 1
+         },
+         {
+           "Name": "UVIndex",
+           "Value": 11,
+           "Category": "Extreme",
+           "CategoryValue": 5
+         }
+       ],
+       "Day": {
+         "Icon": 1,
+         "IconPhrase": "Sunny",
+         "HasPrecipitation": false,
+         "ShortPhrase": "Brilliant sunshine and hot",
+         "LongPhrase": "Brilliant sunshine and hot; caution advised if outside for extended periods of time",
+         "PrecipitationProbability": 0,
+         "ThunderstormProbability": 0,
+         "RainProbability": 0,
+         "SnowProbability": 0,
+         "IceProbability": 0,
+         "Wind": {
+           "Speed": {
+             "Value": 11.1,
+             "Unit": "km/h",
+             "UnitType": 7
+           },
+           "Direction": {
+             "Degrees": 308,
+             "Localized": "NW",
+             "English": "NW"
+           }
+         },
+         "WindGust": {
+           "Speed": {
+             "Value": 22.2,
+             "Unit": "km/h",
+             "UnitType": 7
+           },
+           "Direction": {
+             "Degrees": 2,
+             "Localized": "N",
+             "English": "N"
+           }
+         },
+         "TotalLiquid": {
+           "Value": 0,
+           "Unit": "mm",
+           "UnitType": 3
+         },
+         "Rain": {
+           "Value": 0,
+           "Unit": "mm",
+           "UnitType": 3
+         },
+         "Snow": {
+           "Value": 0,
+           "Unit": "cm",
+           "UnitType": 4
+         },
+         "Ice": {
+           "Value": 0,
+           "Unit": "mm",
+           "UnitType": 3
+         },
+         "HoursOfPrecipitation": 0,
+         "HoursOfRain": 0,
+         "HoursOfSnow": 0,
+         "HoursOfIce": 0,
+         "CloudCover": 9
+       },
+       "Night": {
+         "Icon": 33,
+         "IconPhrase": "Clear",
+         "HasPrecipitation": false,
+         "ShortPhrase": "Clear and warm",
+         "LongPhrase": "Clear and warm; air quality will be unhealthy for sensitive groups",
+         "PrecipitationProbability": 0,
+         "ThunderstormProbability": 0,
+         "RainProbability": 0,
+         "SnowProbability": 0,
+         "IceProbability": 0,
+         "Wind": {
+           "Speed": {
+             "Value": 7.4,
+             "Unit": "km/h",
+             "UnitType": 7
+           },
+           "Direction": {
+             "Degrees": 352,
+             "Localized": "N",
+             "English": "N"
+           }
+         },
+         "WindGust": {
+           "Speed": {
+             "Value": 18.5,
+             "Unit": "km/h",
+             "UnitType": 7
+           },
+           "Direction": {
+             "Degrees": 6,
+             "Localized": "N",
+             "English": "N"
+           }
+         },
+         "TotalLiquid": {
+           "Value": 0,
+           "Unit": "mm",
+           "UnitType": 3
+         },
+         "Rain": {
+           "Value": 0,
+           "Unit": "mm",
+           "UnitType": 3
+         },
+         "Snow": {
+           "Value": 0,
+           "Unit": "cm",
+           "UnitType": 4
+         },
+         "Ice": {
+           "Value": 0,
+           "Unit": "mm",
+           "UnitType": 3
+         },
+         "HoursOfPrecipitation": 0,
+         "HoursOfRain": 0,
+         "HoursOfSnow": 0,
+         "HoursOfIce": 0,
+         "CloudCover": 0
+       },
+       "Sources": [
+         "AccuWeather"
+       ],
+       "MobileLink": "http://m.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?day=1&unit=c&lang=en-us",
+       "Link": "http://www.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?day=1&unit=c&lang=en-us"
+     },
+     {
+       "Date": "2020-05-22T07:00:00+03:00",
+       "EpochDate": 1590120000,
+       "Sun": {
+         "Rise": "2020-05-22T05:39:00+03:00",
+         "EpochRise": 1590115140,
+         "Set": "2020-05-22T19:36:00+03:00",
+         "EpochSet": 1590165360
+       },
+       "Moon": {
+         "Rise": "2020-05-22T05:31:00+03:00",
+         "EpochRise": 1590114660,
+         "Set": "2020-05-22T19:24:00+03:00",
+         "EpochSet": 1590164640,
+         "Phase": "New",
+         "Age": 0
+       },
+       "Temperature": {
+         "Minimum": {
+           "Value": 20.8,
+           "Unit": "C",
+           "UnitType": 17
+         },
+         "Maximum": {
+           "Value": 29.5,
+           "Unit": "C",
+           "UnitType": 17
+         }
+       },
+       "RealFeelTemperature": {
+         "Minimum": {
+           "Value": 19.4,
+           "Unit": "C",
+           "UnitType": 17
+         },
+         "Maximum": {
+           "Value": 33.3,
+           "Unit": "C",
+           "UnitType": 17
+         }
+       },
+       "RealFeelTemperatureShade": {
+         "Minimum": {
+           "Value": 19.4,
+           "Unit": "C",
+           "UnitType": 17
+         },
+         "Maximum": {
+           "Value": 28.5,
+           "Unit": "C",
+           "UnitType": 17
+         }
+       },
+       "HoursOfSun": 9.8,
+       "DegreeDaySummary": {
+         "Heating": {
+           "Value": 0,
+           "Unit": "C",
+           "UnitType": 17
+         },
+         "Cooling": {
+           "Value": 7,
+           "Unit": "C",
+           "UnitType": 17
+         }
+       },
+       "AirAndPollen": [
+         {
+           "Name": "AirQuality",
+           "Value": 102,
+           "Category": "Unhealthy (Sensitive)",
+           "CategoryValue": 3,
+           "Type": "Particle Pollution"
+         },
+         {
+           "Name": "Grass",
+           "Value": 0,
+           "Category": "Low",
+           "CategoryValue": 1
+         },
+         {
+           "Name": "Mold",
+           "Value": 0,
+           "Category": "Low",
+           "CategoryValue": 1
+         },
+         {
+           "Name": "Ragweed",
+           "Value": 0,
+           "Category": "Low",
+           "CategoryValue": 1
+         },
+         {
+           "Name": "Tree",
+           "Value": 0,
+           "Category": "Low",
+           "CategoryValue": 1
+         },
+         {
+           "Name": "UVIndex",
+           "Value": 11,
+           "Category": "Extreme",
+           "CategoryValue": 5
+         }
+       ],
+       "Day": {
+         "Icon": 2,
+         "IconPhrase": "Mostly sunny",
+         "HasPrecipitation": false,
+         "ShortPhrase": "Mostly sunny",
+         "LongPhrase": "Mostly sunny; air quality will be unhealthy for sensitive groups",
+         "PrecipitationProbability": 0,
+         "ThunderstormProbability": 0,
+         "RainProbability": 0,
+         "SnowProbability": 0,
+         "IceProbability": 0,
+         "Wind": {
+           "Speed": {
+             "Value": 13,
+             "Unit": "km/h",
+             "UnitType": 7
+           },
+           "Direction": {
+             "Degrees": 309,
+             "Localized": "NW",
+             "English": "NW"
+           }
+         },
+         "WindGust": {
+           "Speed": {
+             "Value": 20.4,
+             "Unit": "km/h",
+             "UnitType": 7
+           },
+           "Direction": {
+             "Degrees": 307,
+             "Localized": "NW",
+             "English": "NW"
+           }
+         },
+         "TotalLiquid": {
+           "Value": 0,
+           "Unit": "mm",
+           "UnitType": 3
+         },
+         "Rain": {
+           "Value": 0,
+           "Unit": "mm",
+           "UnitType": 3
+         },
+         "Snow": {
+           "Value": 0,
+           "Unit": "cm",
+           "UnitType": 4
+         },
+         "Ice": {
+           "Value": 0,
+           "Unit": "mm",
+           "UnitType": 3
+         },
+         "HoursOfPrecipitation": 0,
+         "HoursOfRain": 0,
+         "HoursOfSnow": 0,
+         "HoursOfIce": 0,
+         "CloudCover": 20
+       },
+       "Night": {
+         "Icon": 38,
+         "IconPhrase": "Mostly cloudy",
+         "HasPrecipitation": false,
+         "ShortPhrase": "Warm with increasing clouds",
+         "LongPhrase": "Warm with increasing clouds",
+         "PrecipitationProbability": 25,
+         "ThunderstormProbability": 0,
+         "RainProbability": 25,
+         "SnowProbability": 0,
+         "IceProbability": 0,
+         "Wind": {
+           "Speed": {
+             "Value": 9.3,
+             "Unit": "km/h",
+             "UnitType": 7
+           },
+           "Direction": {
+             "Degrees": 254,
+             "Localized": "WSW",
+             "English": "WSW"
+           }
+         },
+         "WindGust": {
+           "Speed": {
+             "Value": 16.7,
+             "Unit": "km/h",
+             "UnitType": 7
+           },
+           "Direction": {
+             "Degrees": 301,
+             "Localized": "WNW",
+             "English": "WNW"
+           }
+         },
+         "TotalLiquid": {
+           "Value": 0,
+           "Unit": "mm",
+           "UnitType": 3
+         },
+         "Rain": {
+           "Value": 0,
+           "Unit": "mm",
+           "UnitType": 3
+         },
+         "Snow": {
+           "Value": 0,
+           "Unit": "cm",
+           "UnitType": 4
+         },
+         "Ice": {
+           "Value": 0,
+           "Unit": "mm",
+           "UnitType": 3
+         },
+         "HoursOfPrecipitation": 0,
+         "HoursOfRain": 0,
+         "HoursOfSnow": 0,
+         "HoursOfIce": 0,
+         "CloudCover": 78
+       },
+       "Sources": [
+         "AccuWeather"
+       ],
+       "MobileLink": "http://m.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?day=2&unit=c&lang=en-us",
+       "Link": "http://www.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?day=2&unit=c&lang=en-us"
+     },
+     {
+       "Date": "2020-05-23T07:00:00+03:00",
+       "EpochDate": 1590206400,
+       "Sun": {
+         "Rise": "2020-05-23T05:39:00+03:00",
+         "EpochRise": 1590201540,
+         "Set": "2020-05-23T19:37:00+03:00",
+         "EpochSet": 1590251820
+       },
+       "Moon": {
+         "Rise": "2020-05-23T06:07:00+03:00",
+         "EpochRise": 1590203220,
+         "Set": "2020-05-23T20:22:00+03:00",
+         "EpochSet": 1590254520,
+         "Phase": "WaxingCrescent",
+         "Age": 1
+       },
+       "Temperature": {
+         "Minimum": {
+           "Value": 19.4,
+           "Unit": "C",
+           "UnitType": 17
+         },
+         "Maximum": {
+           "Value": 25.6,
+           "Unit": "C",
+           "UnitType": 17
+         }
+       },
+       "RealFeelTemperature": {
+         "Minimum": {
+           "Value": 17.7,
+           "Unit": "C",
+           "UnitType": 17
+         },
+         "Maximum": {
+           "Value": 29,
+           "Unit": "C",
+           "UnitType": 17
+         }
+       },
+       "RealFeelTemperatureShade": {
+         "Minimum": {
+           "Value": 17.7,
+           "Unit": "C",
+           "UnitType": 17
+         },
+         "Maximum": {
+           "Value": 24.1,
+           "Unit": "C",
+           "UnitType": 17
+         }
+       },
+       "HoursOfSun": 10.3,
+       "DegreeDaySummary": {
+         "Heating": {
+           "Value": 0,
+           "Unit": "C",
+           "UnitType": 17
+         },
+         "Cooling": {
+           "Value": 5,
+           "Unit": "C",
+           "UnitType": 17
+         }
+       },
+       "AirAndPollen": [
+         {
+           "Name": "AirQuality",
+           "Value": 40,
+           "Category": "Good",
+           "CategoryValue": 1,
+           "Type": "Ozone"
+         },
+         {
+           "Name": "Grass",
+           "Value": 0,
+           "Category": "Low",
+           "CategoryValue": 1
+         },
+         {
+           "Name": "Mold",
+           "Value": 0,
+           "Category": "Low",
+           "CategoryValue": 1
+         },
+         {
+           "Name": "Ragweed",
+           "Value": 0,
+           "Category": "Low",
+           "CategoryValue": 1
+         },
+         {
+           "Name": "Tree",
+           "Value": 0,
+           "Category": "Low",
+           "CategoryValue": 1
+         },
+         {
+           "Name": "UVIndex",
+           "Value": 11,
+           "Category": "Extreme",
+           "CategoryValue": 5
+         }
+       ],
+       "Day": {
+         "Icon": 2,
+         "IconPhrase": "Mostly sunny",
+         "HasPrecipitation": false,
+         "ShortPhrase": "Sunny to partly cloudy",
+         "LongPhrase": "Sunny to partly cloudy",
+         "PrecipitationProbability": 5,
+         "ThunderstormProbability": 0,
+         "RainProbability": 5,
+         "SnowProbability": 0,
+         "IceProbability": 0,
+         "Wind": {
+           "Speed": {
+             "Value": 14.8,
+             "Unit": "km/h",
+             "UnitType": 7
+           },
+           "Direction": {
+             "Degrees": 259,
+             "Localized": "W",
+             "English": "W"
+           }
+         },
+         "WindGust": {
+           "Speed": {
+             "Value": 22.2,
+             "Unit": "km/h",
+             "UnitType": 7
+           },
+           "Direction": {
+             "Degrees": 283,
+             "Localized": "WNW",
+             "English": "WNW"
+           }
+         },
+         "TotalLiquid": {
+           "Value": 0,
+           "Unit": "mm",
+           "UnitType": 3
+         },
+         "Rain": {
+           "Value": 0,
+           "Unit": "mm",
+           "UnitType": 3
+         },
+         "Snow": {
+           "Value": 0,
+           "Unit": "cm",
+           "UnitType": 4
+         },
+         "Ice": {
+           "Value": 0,
+           "Unit": "mm",
+           "UnitType": 3
+         },
+         "HoursOfPrecipitation": 0,
+         "HoursOfRain": 0,
+         "HoursOfSnow": 0,
+         "HoursOfIce": 0,
+         "CloudCover": 25
+       },
+       "Night": {
+         "Icon": 36,
+         "IconPhrase": "Intermittent clouds",
+         "HasPrecipitation": false,
+         "ShortPhrase": "Partly cloudy and warm",
+         "LongPhrase": "Partly cloudy and warm",
+         "PrecipitationProbability": 2,
+         "ThunderstormProbability": 0,
+         "RainProbability": 2,
+         "SnowProbability": 0,
+         "IceProbability": 0,
+         "Wind": {
+           "Speed": {
+             "Value": 13,
+             "Unit": "km/h",
+             "UnitType": 7
+           },
+           "Direction": {
+             "Degrees": 233,
+             "Localized": "SW",
+             "English": "SW"
+           }
+         },
+         "WindGust": {
+           "Speed": {
+             "Value": 22.2,
+             "Unit": "km/h",
+             "UnitType": 7
+           },
+           "Direction": {
+             "Degrees": 237,
+             "Localized": "WSW",
+             "English": "WSW"
+           }
+         },
+         "TotalLiquid": {
+           "Value": 0,
+           "Unit": "mm",
+           "UnitType": 3
+         },
+         "Rain": {
+           "Value": 0,
+           "Unit": "mm",
+           "UnitType": 3
+         },
+         "Snow": {
+           "Value": 0,
+           "Unit": "cm",
+           "UnitType": 4
+         },
+         "Ice": {
+           "Value": 0,
+           "Unit": "mm",
+           "UnitType": 3
+         },
+         "HoursOfPrecipitation": 0,
+         "HoursOfRain": 0,
+         "HoursOfSnow": 0,
+         "HoursOfIce": 0,
+         "CloudCover": 50
+       },
+       "Sources": [
+         "AccuWeather"
+       ],
+       "MobileLink": "http://m.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?day=3&unit=c&lang=en-us",
+       "Link": "http://www.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?day=3&unit=c&lang=en-us"
+     },
+     {
+       "Date": "2020-05-24T07:00:00+03:00",
+       "EpochDate": 1590292800,
+       "Sun": {
+         "Rise": "2020-05-24T05:38:00+03:00",
+         "EpochRise": 1590287880,
+         "Set": "2020-05-24T19:38:00+03:00",
+         "EpochSet": 1590338280
+       },
+       "Moon": {
+         "Rise": "2020-05-24T06:49:00+03:00",
+         "EpochRise": 1590292140,
+         "Set": "2020-05-24T21:20:00+03:00",
+         "EpochSet": 1590344400,
+         "Phase": "WaxingCrescent",
+         "Age": 2
+       },
+       "Temperature": {
+         "Minimum": {
+           "Value": 17.4,
+           "Unit": "C",
+           "UnitType": 17
+         },
+         "Maximum": {
+           "Value": 23.6,
+           "Unit": "C",
+           "UnitType": 17
+         }
+       },
+       "RealFeelTemperature": {
+         "Minimum": {
+           "Value": 15.9,
+           "Unit": "C",
+           "UnitType": 17
+         },
+         "Maximum": {
+           "Value": 26.2,
+           "Unit": "C",
+           "UnitType": 17
+         }
+       },
+       "RealFeelTemperatureShade": {
+         "Minimum": {
+           "Value": 15.9,
+           "Unit": "C",
+           "UnitType": 17
+         },
+         "Maximum": {
+           "Value": 21.7,
+           "Unit": "C",
+           "UnitType": 17
+         }
+       },
+       "HoursOfSun": 8.5,
+       "DegreeDaySummary": {
+         "Heating": {
+           "Value": 0,
+           "Unit": "C",
+           "UnitType": 17
+         },
+         "Cooling": {
+           "Value": 2,
+           "Unit": "C",
+           "UnitType": 17
+         }
+       },
+       "AirAndPollen": [
+         {
+           "Name": "AirQuality",
+           "Value": 49,
+           "Category": "Good",
+           "CategoryValue": 1,
+           "Type": "Ozone"
+         },
+         {
+           "Name": "Grass",
+           "Value": 0,
+           "Category": "Low",
+           "CategoryValue": 1
+         },
+         {
+           "Name": "Mold",
+           "Value": 0,
+           "Category": "Low",
+           "CategoryValue": 1
+         },
+         {
+           "Name": "Ragweed",
+           "Value": 0,
+           "Category": "Low",
+           "CategoryValue": 1
+         },
+         {
+           "Name": "Tree",
+           "Value": 0,
+           "Category": "Low",
+           "CategoryValue": 1
+         },
+         {
+           "Name": "UVIndex",
+           "Value": 11,
+           "Category": "Extreme",
+           "CategoryValue": 5
+         }
+       ],
+       "Day": {
+         "Icon": 3,
+         "IconPhrase": "Partly sunny",
+         "HasPrecipitation": true,
+         "PrecipitationType": "Rain",
+         "PrecipitationIntensity": "Light",
+         "ShortPhrase": "A stray afternoon shower",
+         "LongPhrase": "Partly sunny with a shower in places in the afternoon",
+         "PrecipitationProbability": 44,
+         "ThunderstormProbability": 20,
+         "RainProbability": 44,
+         "SnowProbability": 0,
+         "IceProbability": 0,
+         "Wind": {
+           "Speed": {
+             "Value": 20.4,
+             "Unit": "km/h",
+             "UnitType": 7
+           },
+           "Direction": {
+             "Degrees": 254,
+             "Localized": "WSW",
+             "English": "WSW"
+           }
+         },
+         "WindGust": {
+           "Speed": {
+             "Value": 31.5,
+             "Unit": "km/h",
+             "UnitType": 7
+           },
+           "Direction": {
+             "Degrees": 279,
+             "Localized": "W",
+             "English": "W"
+           }
+         },
+         "TotalLiquid": {
+           "Value": 0.6,
+           "Unit": "mm",
+           "UnitType": 3
+         },
+         "Rain": {
+           "Value": 0.6,
+           "Unit": "mm",
+           "UnitType": 3
+         },
+         "Snow": {
+           "Value": 0,
+           "Unit": "cm",
+           "UnitType": 4
+         },
+         "Ice": {
+           "Value": 0,
+           "Unit": "mm",
+           "UnitType": 3
+         },
+         "HoursOfPrecipitation": 0.5,
+         "HoursOfRain": 0.5,
+         "HoursOfSnow": 0,
+         "HoursOfIce": 0,
+         "CloudCover": 45
+       },
+       "Night": {
+         "Icon": 34,
+         "IconPhrase": "Mostly clear",
+         "HasPrecipitation": true,
+         "PrecipitationType": "Rain",
+         "PrecipitationIntensity": "Light",
+         "ShortPhrase": "Mainly clear, a shower late",
+         "LongPhrase": "Mainly clear with a shower in spots late",
+         "PrecipitationProbability": 45,
+         "ThunderstormProbability": 20,
+         "RainProbability": 45,
+         "SnowProbability": 0,
+         "IceProbability": 0,
+         "Wind": {
+           "Speed": {
+             "Value": 9.3,
+             "Unit": "km/h",
+             "UnitType": 7
+           },
+           "Direction": {
+             "Degrees": 316,
+             "Localized": "NW",
+             "English": "NW"
+           }
+         },
+         "WindGust": {
+           "Speed": {
+             "Value": 27.8,
+             "Unit": "km/h",
+             "UnitType": 7
+           },
+           "Direction": {
+             "Degrees": 316,
+             "Localized": "NW",
+             "English": "NW"
+           }
+         },
+         "TotalLiquid": {
+           "Value": 0.6,
+           "Unit": "mm",
+           "UnitType": 3
+         },
+         "Rain": {
+           "Value": 0.6,
+           "Unit": "mm",
+           "UnitType": 3
+         },
+         "Snow": {
+           "Value": 0,
+           "Unit": "cm",
+           "UnitType": 4
+         },
+         "Ice": {
+           "Value": 0,
+           "Unit": "mm",
+           "UnitType": 3
+         },
+         "HoursOfPrecipitation": 0.5,
+         "HoursOfRain": 0.5,
+         "HoursOfSnow": 0,
+         "HoursOfIce": 0,
+         "CloudCover": 15
+       },
+       "Sources": [
+         "AccuWeather"
+       ],
+       "MobileLink": "http://m.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?day=4&unit=c&lang=en-us",
+       "Link": "http://www.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?day=4&unit=c&lang=en-us"
+     },
+     {
+       "Date": "2020-05-25T07:00:00+03:00",
+       "EpochDate": 1590379200,
+       "Sun": {
+         "Rise": "2020-05-25T05:38:00+03:00",
+         "EpochRise": 1590374280,
+         "Set": "2020-05-25T19:38:00+03:00",
+         "EpochSet": 1590424680
+       },
+       "Moon": {
+         "Rise": "2020-05-25T07:38:00+03:00",
+         "EpochRise": 1590381480,
+         "Set": "2020-05-25T22:17:00+03:00",
+         "EpochSet": 1590434220,
+         "Phase": "WaxingCrescent",
+         "Age": 3
+       },
+       "Temperature": {
+         "Minimum": {
+           "Value": 17.4,
+           "Unit": "C",
+           "UnitType": 17
+         },
+         "Maximum": {
+           "Value": 25.2,
+           "Unit": "C",
+           "UnitType": 17
+         }
+       },
+       "RealFeelTemperature": {
+         "Minimum": {
+           "Value": 16.4,
+           "Unit": "C",
+           "UnitType": 17
+         },
+         "Maximum": {
+           "Value": 28,
+           "Unit": "C",
+           "UnitType": 17
+         }
+       },
+       "RealFeelTemperatureShade": {
+         "Minimum": {
+           "Value": 16.4,
+           "Unit": "C",
+           "UnitType": 17
+         },
+         "Maximum": {
+           "Value": 23.4,
+           "Unit": "C",
+           "UnitType": 17
+         }
+       },
+       "HoursOfSun": 10.5,
+       "DegreeDaySummary": {
+         "Heating": {
+           "Value": 0,
+           "Unit": "C",
+           "UnitType": 17
+         },
+         "Cooling": {
+           "Value": 3,
+           "Unit": "C",
+           "UnitType": 17
+         }
+       },
+       "AirAndPollen": [
+         {
+           "Name": "AirQuality",
+           "Value": 0,
+           "Category": "Good",
+           "CategoryValue": 1,
+           "Type": "Ozone"
+         },
+         {
+           "Name": "Grass",
+           "Value": 0,
+           "Category": "Low",
+           "CategoryValue": 1
+         },
+         {
+           "Name": "Mold",
+           "Value": 0,
+           "Category": "Low",
+           "CategoryValue": 1
+         },
+         {
+           "Name": "Ragweed",
+           "Value": 0,
+           "Category": "Low",
+           "CategoryValue": 1
+         },
+         {
+           "Name": "Tree",
+           "Value": 0,
+           "Category": "Low",
+           "CategoryValue": 1
+         },
+         {
+           "Name": "UVIndex",
+           "Value": 12,
+           "Category": "Extreme",
+           "CategoryValue": 5
+         }
+       ],
+       "Day": {
+         "Icon": 5,
+         "IconPhrase": "Hazy sunshine",
+         "HasPrecipitation": false,
+         "ShortPhrase": "Hazy sun",
+         "LongPhrase": "Hazy sun",
+         "PrecipitationProbability": 1,
+         "ThunderstormProbability": 0,
+         "RainProbability": 1,
+         "SnowProbability": 0,
+         "IceProbability": 0,
+         "Wind": {
+           "Speed": {
+             "Value": 14.8,
+             "Unit": "km/h",
+             "UnitType": 7
+           },
+           "Direction": {
+             "Degrees": 264,
+             "Localized": "W",
+             "English": "W"
+           }
+         },
+         "WindGust": {
+           "Speed": {
+             "Value": 27.8,
+             "Unit": "km/h",
+             "UnitType": 7
+           },
+           "Direction": {
+             "Degrees": 260,
+             "Localized": "W",
+             "English": "W"
+           }
+         },
+         "TotalLiquid": {
+           "Value": 0,
+           "Unit": "mm",
+           "UnitType": 3
+         },
+         "Rain": {
+           "Value": 0,
+           "Unit": "mm",
+           "UnitType": 3
+         },
+         "Snow": {
+           "Value": 0,
+           "Unit": "cm",
+           "UnitType": 4
+         },
+         "Ice": {
+           "Value": 0,
+           "Unit": "mm",
+           "UnitType": 3
+         },
+         "HoursOfPrecipitation": 0,
+         "HoursOfRain": 0,
+         "HoursOfSnow": 0,
+         "HoursOfIce": 0,
+         "CloudCover": 31
+       },
+       "Night": {
+         "Icon": 33,
+         "IconPhrase": "Clear",
+         "HasPrecipitation": false,
+         "ShortPhrase": "Clear",
+         "LongPhrase": "Clear",
+         "PrecipitationProbability": 0,
+         "ThunderstormProbability": 0,
+         "RainProbability": 0,
+         "SnowProbability": 0,
+         "IceProbability": 0,
+         "Wind": {
+           "Speed": {
+             "Value": 9.3,
+             "Unit": "km/h",
+             "UnitType": 7
+           },
+           "Direction": {
+             "Degrees": 177,
+             "Localized": "S",
+             "English": "S"
+           }
+         },
+         "WindGust": {
+           "Speed": {
+             "Value": 16.7,
+             "Unit": "km/h",
+             "UnitType": 7
+           },
+           "Direction": {
+             "Degrees": 273,
+             "Localized": "W",
+             "English": "W"
+           }
+         },
+         "TotalLiquid": {
+           "Value": 0,
+           "Unit": "mm",
+           "UnitType": 3
+         },
+         "Rain": {
+           "Value": 0,
+           "Unit": "mm",
+           "UnitType": 3
+         },
+         "Snow": {
+           "Value": 0,
+           "Unit": "cm",
+           "UnitType": 4
+         },
+         "Ice": {
+           "Value": 0,
+           "Unit": "mm",
+           "UnitType": 3
+         },
+         "HoursOfPrecipitation": 0,
+         "HoursOfRain": 0,
+         "HoursOfSnow": 0,
+         "HoursOfIce": 0,
+         "CloudCover": 1
+       },
+       "Sources": [
+         "AccuWeather"
+       ],
+       "MobileLink": "http://m.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?day=5&unit=c&lang=en-us",
+       "Link": "http://www.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?day=5&unit=c&lang=en-us"
+     }
+   ]
+ }

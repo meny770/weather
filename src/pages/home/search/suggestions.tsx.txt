@@ -1,0 +1,16 @@
+// import React, { useState } from 'react'
+// import  EosAccountInputAutocomplete from 'react-eos-account-input-autocomplete'
+ 
+// export const MyExample = () => {
+//    const [value, setValue] = useState('')
+ 
+//   return (<EosAccountInputAutocomplete 
+//      value={value}
+//      limit={5} //default to 10
+//      rpc={'your rpc address or an instance of JsonRpc'}
+//      onChange={_e => setValue(_e.target.value)}
+//      onSelect={_value => setValue(_value)}
+//      onFetchAccounts={_accounts => console.log(_accounts)}
+//    />
+//   )
+// }
