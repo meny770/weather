@@ -1,5 +1,6 @@
 export interface Weather {
   cityName: string;
+  cityCode: string;
   LocalObservationDateTime: string;
   EpochTime: number;
   WeatherText: string;

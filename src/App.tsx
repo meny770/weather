@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Header />
+        <Header store= {store}/>
 
         <Switch>
           <Route path={'/home'} component={() => <Home store= {store} />} />

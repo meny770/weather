@@ -5,8 +5,8 @@ import { Weather } from '../types/weather.interface';
 import { LocationResult } from '../types/location-result.interface';
 import { DailyForecast } from '../types/daily-forecast.interface';
 
-const baseUrl = 'http://localhost:4000';
-// const baseUrl = 'http://dataservice.accuweather.com';
+// const baseUrl = 'http://localhost:4000';
+const baseUrl = 'http://dataservice.accuweather.com';
 const apiKey = 'ozLN4sJCgpYaN6X9pHMgoEKFu0h3v2U3';
 
 export async function getCurrentWeather(locationKey: string): Promise<Weather> {
@@ -33,6 +33,7 @@ export async function get5DaysDailyForecast(locationKey: string, metric: boolean
 
 export async function searchLocation(query: string): Promise<LocationResult[]> {
     const res = await axios.get(`${baseUrl}/locations/v1/cities/autocomplete?q=${query}&apikey=${apiKey}`);
-    const LocationResult = res.data.map(item => {return {id: item.key, cityName: item.LocalizedName}})
+    const LocationResult = res.data.map(item => {return {cityCode: item.Key, cityName: item.LocalizedName}})
+    console.log(LocationResult)
     return LocationResult;
 }

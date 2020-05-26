@@ -1,4 +1,4 @@
 export interface LocationResult {
-  id: number;
+  cityCode: string;
   cityName: string;
 }

@@ -12,7 +12,7 @@ const test = [
 ]
 
 export const WeatherDashboard = observer((props: { store: AppState }) => {
-   let { cityName, currentWeather, dailyForecasts } = props.store
+   let { cityName, currentWeather, dailyForecasts, setNewCityToFavorite } = props.store
 
    return (
       <div className="jumbotron container alert-success">
@@ -24,18 +24,17 @@ export const WeatherDashboard = observer((props: { store: AppState }) => {
             </div>
             <div className='col-3' style={{ textAlign: "right" }}>
                <i className='fa fa-thumb-tack'></i>&nbsp; &nbsp;
-            <button type="button" className="btn btn-outline-success">Add to Favorite</button>
+            <button type="button" className="btn btn-outline-success" onClick={setNewCityToFavorite}>Add to Favorite</button>
             </div>
          </div>
          <h1 className="mt-0">{currentWeather?.WeatherText}</h1>
 
          <hr className="my-5" />
          <div className="row">
-            {dailyForecasts?.map((item, i) =>
+            {dailyForecasts.map((item, i) =>
                 (<DayWeather key={i}
-                  title={item.day}
+                  title={item.day.slice(0, 3)}
                   temperature={item.maxTemperature}
-                  weather={item.dayText}
                />)
             )}
          </div>

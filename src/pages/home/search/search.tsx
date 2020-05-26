@@ -20,33 +20,61 @@ export const Search = observer((props: { store: AppState }) => {
   //   let f = searchAutocomplete.find(item=> item.LocalizedName == searchQuery)
   //   console.log(searchQuery, searchAutocomplete[1], f)
   // }
-  // const debounce = (timer: number, value: string) => {
-  //   if (timer) clearTimeout(timer);
-  //     setTimeout( () => {
-  //       // props.store.searchAutocomplete = searchLocation()
-  //       props.store.search(value)
-  
-  //   }, 400)
-  // }
+  const debounce = (timer: number, value: string) => {
+      setTimeout(() => {
+        // props.store.searchAutocomplete = await searchLocation(value)
+        props.store.search(value)
+    }, timer)
+  }
+  const [openAutocomplete, setOpenAutocomplete] = React.useState('none');
+  const [inputValue, setInputValue] = React.useState('');
+  const [getNewCityLest, setGetNewCityLest] = React.useState(true);
+  const Onblur = () => {
+    setTimeout(()=>setOpenAutocomplete('none'), 200);
+  };
+  const Onfocus = () => {
+    setOpenAutocomplete('block');
+  };
 
   return (
-    <div className="" >
+    <div className="col-12" >
       <form className="form-inline my-2 my-lg-0" style={{zIndex: -1000}}>
         {/* <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"/> */}
         
         <div style={{overflow: 'visible', height: '40px', zIndex: 1000, margin: '20px auto', textAlign: 'left'}}>
-        <input className="form-control mr-sm-2 border-success" type="search" placeholder="Search" aria-label="Search"/>
-        <button className="btn btn-outline-success my-2 my-sm-0" type="submit">
+        <input className="form-control mr-sm-2 border-success" 
+              type="search" placeholder="Search" 
+              aria-label="Search" 
+              value={inputValue} 
+              onChange={event=>{
+                setInputValue(event.target.value);
+                debounce(1000, event.target.value )
+              }} 
+              onFocus={Onfocus} 
+              onBlur={Onblur}/>
+        <button className="btn btn-outline-success my-2 my-sm-0" type="button" 
+        onClick={() => {
+          props.store.searchAutocomplete.find(city=>{
+            if(city.cityName === inputValue) {
+              console.log(city)
+              props.store.cityName = city.cityName
+              props.store.cityCode = city.cityCode
+              props.store.getWeather()
+              
+            }
+          })
+        }}>
           <i className="fa fa-search"></i>
         </button>
   {/* <button type="button" className="list-group-item list-group-item-action active">
     Cras justo odio
   </button> */}
-  <div>
-  <button type="button" className="list-group-item list-group-item-action">Dapibus ac facilisis in</button>
-  <button type="button" className="list-group-item list-group-item-action">Morbi leo risus</button>
-  <button type="button" className="list-group-item list-group-item-action">Porta ac consectetur ac</button>
-  <button type="button" className="list-group-item list-group-item-action" disabled>Vestibulum at eros</button>
+  <div style={{display: openAutocomplete}}>
+    {(inputValue.split('').length>0) && props.store.searchAutocomplete.map((city, i) =>
+      <button key={i} type="button" className="list-group-item list-group-item-action" 
+      onClick={ ()=> setInputValue(city.cityName)}>{city.cityName}</button>
+    )}
+  
   </div>
   
 </div>
