@@ -3,7 +3,6 @@ import { Weather } from "./types/weather.interface";
 import { getCurrentWeather, get5DaysDailyForecast, searchLocation } from "./shared/weather-api";
 import { DailyForecast } from "./types/daily-forecast.interface";
 import { LocationResult } from "./types/location-result.interface";
-import { FavoriteCity } from "./types/favorite-sity.interface";
 import { json } from "express";
 
 export class AppState {
@@ -14,11 +13,11 @@ export class AppState {
     cityCode: string = '215854';
     currentWeather: Weather;
     dailyForecasts: DailyForecast[] = [];
-    searchAutocomplete: LocationResult[] = [];
+    searchAutoComplete: LocationResult[] = [];
     searchQuery: string = '';
-    favoriteCities: FavoriteCity[] = localStorage.getItem("favoriteCities")?.split(';').map(city => JSON.parse(city)) || [];
+    favoriteCities: LocationResult[] = localStorage.getItem("favoriteCities")?.split(';').map(city => JSON.parse(city)) || [];
     WeatherForFavoriteCities: Weather[] = [];
-    color: "primary" | "secondary" | "success" | "danger" | "warning" | "info" | "light" | "dark" = "success"
+    color: string = "success"
 
     selectCity = (cityName: string, cityCode: string) => {
         this.cityName = cityName;
@@ -49,8 +48,8 @@ export class AppState {
 
     search = async (query: string)  => {
         if (query){
-            this.searchAutocomplete = await searchLocation(query)
-            console.log(this.searchAutocomplete);
+            this.searchAutoComplete = await searchLocation(query)
+            console.log(this.searchAutoComplete);
         }
        
     }
@@ -71,13 +70,25 @@ export class AppState {
 
     setNewCityToFavorite = async () => {
         const newCity = {cityName: this.cityName, cityCode: this.cityCode}
-        let cityAlreadyExists = this.favoriteCities.find(city => city.cityName == newCity.cityName)
+        let cityAlreadyExists = this.favoriteCities.find(city => city.cityName === newCity.cityName)
         if(!cityAlreadyExists) {
             this.favoriteCities.push(newCity)
             this.getWeatherForFavoriteCities()
-            let favoriteCities =this.favoriteCities.map(city => JSON.stringify(city)).join(';')
-            console.log(favoriteCities)
-            localStorage.setItem("favoriteCities", favoriteCities)
+            const localStorageFavoriteCities =this.favoriteCities.map(city => JSON.stringify(city)).join(';')
+            console.log(localStorageFavoriteCities)
+            localStorage.setItem("favoriteCities", localStorageFavoriteCities)
+        }
+    }
+
+    deleteCityFromFavorite = async () => {
+        const cityToDelete = {cityName: this.cityName, cityCode: this.cityCode}
+        let cityAlreadyExists = this.favoriteCities.find(city => city.cityName === cityToDelete.cityName)
+        if(cityAlreadyExists) {
+            this.favoriteCities = this.favoriteCities.filter(city => city.cityName !== cityToDelete.cityName)
+            this.getWeatherForFavoriteCities()
+            const localStorageFavoriteCities = this.favoriteCities.map(city => JSON.stringify(city)).join(';')
+            localStorage.setItem("favoriteCities", localStorageFavoriteCities)
+            
         }
     }
 }
@@ -88,7 +99,7 @@ decorate(AppState, {
     cityCode: observable,
     currentWeather: observable,
     dailyForecasts: observable,
-    searchAutocomplete: observable,
+    searchAutoComplete: observable,
     searchQuery: observable,
     favoriteCities: observable,
     temperatureType: observable,

@@ -14,7 +14,7 @@ function App() {
     <div className="App">
       <Router>
         <Header store= {store}/>
-
+        
         <Switch>
           <Route path={'/home'} component={() => <Home store= {store} />} />
           <Route path={'/favorites'} component={() => <Favorite store= {store} />} />

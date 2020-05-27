@@ -5,8 +5,8 @@ import { Weather } from '../types/weather.interface';
 import { LocationResult } from '../types/location-result.interface';
 import { DailyForecast } from '../types/daily-forecast.interface';
 
-// const baseUrl = 'http://localhost:4000';
-const baseUrl = 'http://dataservice.accuweather.com';
+const baseUrl = 'http://localhost:4000';
+// const baseUrl = 'http://dataservice.accuweather.com';
 const apiKey = 'ozLN4sJCgpYaN6X9pHMgoEKFu0h3v2U3';
 
 export async function getCurrentWeather(locationKey: string): Promise<Weather> {

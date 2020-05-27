@@ -3,33 +3,31 @@ import * as React from 'react';
 import { Link } from 'react-router-dom'
 import { AppState } from './../AppState';
 import { observer } from 'mobx-react';
+import './style.css';
+import { ColorChose } from './colorChose';
 
 export const Header = observer((props: { store: AppState }) =>  {
-   const { color } = props.store;
+   const { color, temperatureType } = props.store;
+   const metric = (temperatureType === 'Metric')
    return(
 
 <nav className={`navbar navbar-expand-lg navbar-light alert-${color}`}>
    <div className="container">
-   <div className="navbar-brand">Menachem Mashraki</div>
-  <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <span className="navbar-toggler-icon"></span>
-  </button>
-  <div className="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-    <div className="navbar-nav">
-    <Link type="button" id='home-Link' className={`btn btn-${color}`} to='/home' style={{margin: '1px'}}>Home</Link>
-    <Link type="button" className={`btn btn-${color}`} to='/favorites' style={{margin: '1px'}}>Favorites</Link>
-    <div className="btn-group " role="group">
-    <button id="btnGroupDrop1" type="button" className="btn btn-outline-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    <i className="fa fa-paint-brush"></i>
+      <div className="navbar-brand">Menachem Mashraki</div>
+         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon"></span>
+         </button>
+      <div className="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+         <div className="navbar-nav">
+            <Link type="button" id='home-Link' className={`btn btn-${color}`} to='/home' style={{margin: '1px'}}>Home</Link>
+            <Link type="button" className={`btn btn-${color}`} to='/favorites' style={{margin: '1px'}}>Favorites</Link>
+            <ColorChose store={props.store}/>
+  <button type="button" className={`btn btn-outline-${color}`} style={{margin: '1px'}}
+      onClick={() => {
+         props.store.temperatureType = metric ? 'Imperial' : 'Metric'
+      }}>
+      { metric ? <span>&#8457;</span> : <span>&#8451;</span>}
     </button>
-    <div className={`dropdown-menu alert-${color}`}>
-    <ul className='btn-group' aria-labelledby="btnGroupDrop1">
-      <li className={`btn btn-${color}`} ></li>
-      <li className={`btn btn-danger`} ></li>
-    </ul>
-    </div>
-
-  </div>
     </div>
   </div>
    </div>
@@ -51,7 +49,7 @@ export const Header = observer((props: { store: AppState }) =>  {
 //   </li>
 //   <li className="nav-item active">
 
-//   <Link type="button" className="btn btn-success float-right" to='/favorites'>Favorites</Link>
+//   <Link type="button" className="btn btn-${color} float-right" to='/favorites'>Favorites</Link>
 //   </li>
 //   </ul>
 //   </div>
