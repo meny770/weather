@@ -2,65 +2,27 @@ import React from 'react';
 import { AppState } from '../../AppState';
 import { observer } from 'mobx-react';
 import { AddToFavorite } from './addToFavorite';
-
+import { apiKey, baseUrl } from '../../shared/weather-api';
+import image from '../../images/image.jpg';
 
 export const CurrentWeather = observer((props: { store: AppState }) => {
-   const { cityName, temperatureType, currentWeather, } = props.store;
+   const { cityName, temperatureType, currentWeather, cityCode, } = props.store;
    const metric = (temperatureType === 'Metric');
    const temperature = currentWeather?.Temperature?.[temperatureType]?.Value;
-   let icon;
+   const src = `${baseUrl}/imagery/v1/maps/radsat/480x480/${cityCode}?apikey=${apiKey}`;
 
-   if(metric) {
-      switch (temperature) {
-         case 34-50:
-            icon = 4;
-            break;
-         case 18-33:
-            icon = 3;
-            break;
-         case 2-17:
-            icon = 2;
-            break;
-         case -14-1:
-            icon = 1;
-            break;
-         case -30-(-15):
-            icon = 0;
-            break;
-         default:
-      }
-   } else {
-      switch (temperature) {
-         case 92-120:
-            icon = 4;
-            break;
-         case 64-91:
-            icon = 3;
-            break;
-         case 36-63:
-            icon = 2;
-            break;
-         case 8-35:
-            icon = 1;
-            break;
-         case -20-7:
-            icon = 0;
-            break;
-         default:
-      }
-   }
-   
    return (
       <div>
          <div className=" row" >
-            <h1>
-               <i className='fa fa-cloud'></i>
-            </h1>
-            
+            <img src={image} 
+                  alt={`${cityName} satellite`} 
+                  width="100" 
+                  height='100'>
+            </img>
             <div className="media-body col-9" style={{ textAlign: "left" }}>
                <h5 className="mt-0">{cityName}</h5>
                <h5 className="card-title">
-               { (temperatureType === 'Metric') ? <span>&#8451;</span> : <span>&#8457;</span>}&nbsp;
+                  { metric ? <span>&#8451;</span> : <span>&#8457;</span>}&nbsp;
                   {temperature}
                </h5>
             </div>

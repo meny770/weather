@@ -1,34 +1,35 @@
 import React from 'react';
 import { observer } from 'mobx-react';
 import { AppState } from '../../../AppState';
-import { AutoComplete } from './autocomplete'
+import { AutoComplete } from './autocomplete';
 
 export const Search = observer((props: { store: AppState }) => {
-  const { searchAutoComplete: searchAutocomplete, color, search, } = props.store
+  const { searchAutoComplete: searchAutocomplete, color, search, } = props.store;
 
   const [openAutocomplete, setOpenAutocomplete] = React.useState('none');
   const [inputValue, setInputValue] = React.useState('');
 
   const debounce = (timer: number, value: string, action: Function) => {
-      setTimeout(() => 
-      action(value)
-    , timer)
-  }
+    setTimeout(() => 
+    action(value)
+    , timer);
+  };
 
   const CatchTheChosenCity = () => {
     searchAutocomplete.find(city => {
       if (city.cityName === inputValue) {
-        props.store.cityName = city.cityName
-        props.store.cityCode = city.cityCode
-        props.store.getWeather()
+        props.store.cityName = city.cityName;
+        props.store.cityCode = city.cityCode;
+        props.store.getWeather();
       }
+      return true;
     })
-  }
+  };
 
   const OnChange = (event) => {
     setInputValue(event.target.value);
-    debounce(1000, event.target.value , search)
-  }
+    debounce(1000, event.target.value , search);
+  };
 
   let searchStyle = {
     overflow: 'visible', 
@@ -36,7 +37,7 @@ export const Search = observer((props: { store: AppState }) => {
     zIndex: 1000, 
     margin: '20px auto', 
     textAlign: 'left',
-  } as React.CSSProperties
+  } as React.CSSProperties;
 
   return (
     <div className="col-12" >
@@ -64,6 +65,6 @@ export const Search = observer((props: { store: AppState }) => {
         </div>
       </form>
     </div>
-  )
+  );
 });
 

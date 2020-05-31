@@ -1,6 +1,6 @@
-const current = require('./src/local/current.json')
-const deys = require('./src/local/5day.json')
-const search = require('./src/local/search.json')
+const current = require('./local/current.json')
+const deys = require('./local/5day.json')
+const search = require('./local/search.json')
 
 const express = require('express')
 const cors = require('cors')

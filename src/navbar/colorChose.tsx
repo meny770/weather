@@ -5,7 +5,7 @@ import { AppState } from '../AppState';
 
 export const ColorChose = observer((props: { store: AppState }) => {
    const { color, } = props.store;
-   const colors = ["primary", "secondary", "success", "danger", "warning", "info", "dark"]
+   const colors = ["primary", "secondary", "success", "warning", "info", "dark"];
 
    return ( 
       <div className="btn-group " role="group">
@@ -13,10 +13,13 @@ export const ColorChose = observer((props: { store: AppState }) => {
             <i className="fa fa-paint-brush"></i>
          </button>
          <div className={`dropdown-menu alert-${color}`}>
-            {colors.map(color => 
-            <button className={`btn btn-${color} col-12`} 
-                     onClick={() => props.store.color = color}></button>)}
+            {colors.map((color, i)=> 
+               <button className={`btn btn-${color} col-12`}
+                        key={i}
+                        onClick={() => props.store.color = color}>
+               </button>
+            )}
          </div>
       </div>
-   )
+   );
 })

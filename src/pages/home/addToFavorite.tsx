@@ -4,10 +4,10 @@ import { observer } from 'mobx-react';
 
 
 export const AddToFavorite = observer((props: { store: AppState }) => {
-   const { favoriteCities, cityName, color, deleteCityFromFavorite, setNewCityToFavorite,} = props.store
+   const { favoriteCities, cityName, color, deleteCityFromFavorite, setNewCityToFavorite,} = props.store;
 
    let addToFavorite;
-   const cityAlreadySaved = favoriteCities.find(city => city.cityName === cityName)
+   const cityAlreadySaved = favoriteCities.find(city => city.cityName === cityName);
 
    if (cityAlreadySaved) {
       addToFavorite = <div className='col-3' style={{ textAlign: "right" }}>
@@ -29,5 +29,6 @@ export const AddToFavorite = observer((props: { store: AppState }) => {
                         </button>
                      </div>
    }
+   
    return (addToFavorite);
 })
